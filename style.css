@@ -153,6 +153,12 @@ body {
     width: 80%;
 }
 
+#selectType {
+    align-items: inherit;
+    display: flex;
+    justify-content: right;
+    margin-bottom: 0.5em;
+}
 #input-area input {
     width: calc(100% - 2em);
     background-color: #40414F;
