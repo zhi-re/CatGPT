@@ -87,6 +87,10 @@ body {
     background-color: #444654;
 }
 
+.chat-gpt-bubble-container2 {
+    background-color: #343541;
+}
+
 .wouter-bubble-container {
     background-color: #3b3c48;
     padding: 0.5em 0;
