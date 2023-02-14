@@ -134,7 +134,7 @@
 
                     meows = meows.replaceAll("\n", "<br>")
 
-                    if (typeSelectString == 0) {
+                    if (typeSelectString == 0 || !meows.includes("http")) {
                         let meowLoop = setInterval(() => { // Interval to show more of the reply every 100 milliseconds (simulating typing behaviour)
                             if (currentMeow < meows.length) {
                                 currentMeow += Math.floor(Math.random() * 10); // Show between 0 and 10 more characters
@@ -152,10 +152,7 @@
                                 userInput.focus(); // Focus the input again, so user can type a new response
                             }
                         }, 100);
-                    }
-
-
-                    if (typeSelectString == 1) {
+                    } else if (typeSelectString == 1) {
                         newBubble2.innerHTML = '<div><img src=' + meows + ' height="30%" width="30%" /></div>';
                         userInput.focus(); // Focus the input again, so user can type a new response
                     }
